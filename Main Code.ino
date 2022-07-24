@@ -25,8 +25,11 @@ void loop() {
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Temp: ");
-
+// Default temperatures displayed in degrees celsius
   lcd.print((int)(DHT.temperature)); lcd.print(" C");
+  /*  For temperatures displayed in degrees Fahrenheit:
+   lcd.print((int)((1.8)*(int)(DHT.temperature) + (int)(32))); lcd.print(" F");
+  */
   
   lcd.setCursor(0,1);
     lcd.print("Humidity: ");
