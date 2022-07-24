@@ -38,5 +38,5 @@ void loop() {
   lcd.setCursor(0,1);
     lcd.print("Humidity: ");
     lcd.print((int)(DHT.humidity));lcd.print(" %");
- delay(1200);
+ delay(1200); // Set delay time (ms) between data samples
 }
